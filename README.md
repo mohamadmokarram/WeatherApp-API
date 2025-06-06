@@ -2,7 +2,7 @@
 <p>Hello! Here's a Simple yet stylish ☀️ Weather App!.You can enter your desired city to check the current weather. Hope you like it!🚀</p>
 
 <a href="https://mohamadmokarram.github.io/WeatherApp-API" target="_blank">
-  <img src="https://img.shields.io/badge/demo-%20View%20Demo%20-blue.svg?style=for-the-badge&logo=github" alt="View Demo" style="margin-bottom: 20px;>
+  <img src="https://img.shields.io/badge/demo-%20View%20Demo%20-blue.svg?style=for-the-badge&logo=github" alt="View Demo">
 </a>
 
 
