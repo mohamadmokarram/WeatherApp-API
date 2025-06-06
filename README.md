@@ -2,6 +2,7 @@
 <p>Hello! Here's a Simple yet stylish ☀️ Weather App!.You can enter your desired city to check the current weather. Hope you like it!🚀</p>
 
 ![Image](https://github.com/user-attachments/assets/80e72929-28b6-4118-bb2d-9c7d76599c99)
+<p align="center"><a href="https://mohamadmokarram.github.io/WeatherApp-API/">Demo Project</a></p>
 
 
 - Developed by Mohamad Mokarram
