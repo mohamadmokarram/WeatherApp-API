@@ -5,6 +5,11 @@
 <p align="center"><a href="https://mohamadmokarram.github.io/WeatherApp-API/">Demo Project</a></p>
 
 
+<a href="https://mohamadmokarram.github.io/WeatherApp-API" target="_blank">
+  <img src="https://img.shields.io/badge/demo-%20View%20Demo%20-blue.svg?style=for-the-badge&logo=github" alt="View Demo">
+</a>
+
+
 - Developed by Mohamad Mokarram
 
 - Created - 2025-06-06
