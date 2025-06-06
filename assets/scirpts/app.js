@@ -41,6 +41,8 @@ function setBackgroundImage() {
     fileName = "drizzle";
   } else if (conditionTxt.includes("sleet")) {
     fileName = "sleet";
+  } else if (conditionTxt.includes("clear") && cityData.current.is_day === 0) {
+    fileName = "clear";
   } else {
     fileName = "good-weather";
   }
