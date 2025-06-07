@@ -47,8 +47,17 @@ function setBackgroundImage() {
     fileName = "good-weather";
   }
 
+  const bgImg = new Image();
+  bgImg.src = `./assets/img/${fileName}.webp`;
+
+  //when loading image is finished , then remove loader and show info
+  bgImg.addEventListener("load", () => {
+    //hide loader when background image is loaded quietly
+    searchBox.style["background-image"] = `url(${bgImg.src})`;
+    loader.classList.add("d-none");
+    showWeatherInfo();
+  });
   //changing background
-  searchBox.style["background-image"] = `url(./assets/img/${fileName}.webp)`;
 }
 
 function showWeatherInfo() {
@@ -76,19 +85,17 @@ const url = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=`;
 
 function getWeatherData() {
   const city = input.value;
-  //show loader
+  //show loading first
   loader.classList.remove("d-none");
 
   fetch(`${url}${city}&aqi=no`)
     .then(res => res.json())
     .then(data => {
-      //hide loader
-      loader.classList.add("d-none");
+      console.log(data);
       cityData = data;
-      //change background
+      //change background when data is ready
       setBackgroundImage();
       //show info
-      showWeatherInfo();
       input.value = "";
     })
     .catch(err => {
@@ -99,6 +106,7 @@ function getWeatherData() {
       clearData();
       //display none to response box and show not found box
       responseElm.querySelector("h3").textContent = "City not found.";
+      loader.classList.add("d-none");
     });
 }
 
