@@ -30,13 +30,13 @@ function setBackgroundImage() {
     fileName = "snow";
   } else if (conditionTxt.includes("mist") || conditionTxt.includes("fog")) {
     fileName = "mist";
+  } else if (conditionTxt.includes("partly cloudy")) {
+    fileName = "partlycloudy";
   } else if (
     conditionTxt.includes("cloudy") ||
     conditionTxt.includes("overcast")
   ) {
     fileName = "cloudy";
-  } else if (conditionTxt.includes("partly cloudy")) {
-    fileName = "partlycloudy";
   } else if (conditionTxt.includes("drizzle")) {
     fileName = "drizzle";
   } else if (conditionTxt.includes("sleet")) {
